@@ -2,28 +2,24 @@ pipeline {
     agent any
     
     stages {
-        stage('Clone Repository') {
+        stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo.git'
+                git branch: 'main', url: 'git@github.com:Somya774/DevOps.git/'
             }
         }
-        
         stage('Build') {
             steps {
-                sh 'mvn clean package'  // Adjust based on your build tool
+                echo 'Building the application...'
             }
         }
-        
         stage('Test') {
             steps {
-                sh 'mvn test'  // Run tests
+                echo 'Running tests...'
             }
         }
-        
         stage('Deploy') {
             steps {
-                echo 'Deploying application...'
-                // Add deployment script here (Docker, Kubernetes, etc.)
+                echo 'Deploying the application...'
             }
         }
     }
