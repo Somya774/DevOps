@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Book Retail Company</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        header {
+            background: #4a90e2;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #ffcc00;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #4a90e2;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        h1, h2 {
+            color: #4a90e2;
+        }
+        .book-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .book-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            width: calc(25% - 20px);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .book-item:hover {
+            transform: scale(1.05);
+            border-color: #ffcc00;
+        }
+        .book-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .book-item {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .book-item {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Interactive Book Retail Company</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#books">Books</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container" id="home">
+    <h2>Welcome to Our Book Store!</h2>
+    <p>Your one-stop shop for all your reading needs. Explore our wide range of books across various genres.</p>
+</div>
+
+<div class="container" id="about">
+    <h2>About Us</h2>
+    <p>We are passionate about books and aim to provide the best selection for our customers. Our team is dedicated to helping you find your next great read!</p>
+</div>
+
+<div class="container" id="books">
+    <h2>Our Books</h2>
+    <div class="book-list">
+        <div class="book-item">
+            <img src="https://via.placeholder.com/150" alt="Book 1">
+            <h3>Book Title 1</h3>
+            <p>Author: Author 1</p>
+            <p>Price: $10.00</p>
+        </div>
+        <div class="book-item">
+            <img src="https://via.placeholder.com/150" alt="Book 2">
+            <h3>Book Title 2</h3>
+            <p>Author: Author 2</p>
+            <p>Price: $12.00</p>
+        </div>
+        <div class="book-item">
+            <img src="https://via.placeholder.com/150" alt="Book 3">
+            <h3>Book Title 3</h3>
+            <p
