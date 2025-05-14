@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+        header {
+            background: black;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            background: white;
+            padding: 10px;
+            border-bottom: 2px solid #ddd;
+        }
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: green;
+        }
+        .container {
+            margin: 30px auto;
+            width: 80%;
+        }
+        .product {
+            display: inline-block;
+            width: 220px;
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background: white;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .small-img {
+            max-width: 100%;
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 28px;
+            color: green;
+        }
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            margin: 10px 0;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        button {
+            background: green;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <header>Welcome to Our Shop</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </nav>
+    <div class="container shop">
+        <h1>Our Products</h1>
+        <div class="product">
+            <img src="h1.jpg" alt="Product 1" class="small-img">
+            <h2>Product 1</h2>
+            <p>$20.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="h2.jpg" alt="Product 2" class="small-img">
+            <h2>Product 2</h2>
+            <p>$25.00</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html> 
